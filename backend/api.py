@@ -33,7 +33,7 @@ MAX_CONCURRENT_IPS = 25
 async def lifespan(app: FastAPI):
     # Startup
     global thread_manager
-    logger.info(f"Starting up FastAPI application with instance ID: {instance_id} in {config.ENV_MODE.value} mode")
+    logger.info(f"Starting up FastAPI application name: {instance_id} in {config.ENV_MODE.value} mode")
     
     try:
         # Initialize database
